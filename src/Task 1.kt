@@ -6,12 +6,12 @@ fun main() {
     villain.introduce()
 }
 
-class AnimeCharacter(
+open class AnimeCharacter(
     val name: String,
     val powerLevel: Int,
     val isHero: Boolean
 ) {
-    fun introduce() {
+    open fun introduce() {
         if (isHero) {
             println("Hi! I'm $name, the humanity's strongest soldier that has $powerLevel")
         } else {
